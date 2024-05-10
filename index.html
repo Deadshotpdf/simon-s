@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon</title>
     <style>
-        .outer{
+        .outer {
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -13,54 +13,66 @@
             justify-content: center;
             align-items: center;
         }
-        .inner{
-            height: 10rem;
-            width: 10rem;
-            
+       
+        .inner {
+            height: 15vw;
+            width: 15vw;
+            max-height: 10rem;
+            max-width: 10rem;
             display: inline-block; 
             margin: 10px;
             border-radius: 15px;
             border: 5px black solid;
         }
-        .pink{
+        
+        .pink {
             background-color: pink;
-
         }
-        .blue{
+        
+        .blue {
             background-color: blue;
-
         }
-        .orange{
+        
+        .orange {
             background-color: orange;
         }
-        .red{
+        
+        .red {
             background-color: red;
         }
        
+        @media (max-width: 768px) {
+            .inner {
+                height: 20vw;
+                width: 20vw;
+                max-height: 8rem;
+                max-width: 8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .inner {
+                height: 30vw;
+                width: 30vw;
+                max-height: 6rem;
+                max-width: 6rem;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="outer">
         <h1 class="heading">Simon Game</h1>
-    <h2>Click to start</h2>
-    <div class="div">
-        <div class="inner pink btn">
-
+        <h2>Click to start</h2>
+        <div class="div">
+            <div class="inner pink btn"></div>
+            <div class="inner blue btn"></div>
         </div>
-        <div class="inner blue btn">
-
+        <div class="div">
+            <div class="inner orange btn"></div>
+            <div class="inner red btn"></div>
         </div>
-    </div>
-    <div class="div">
-        <div class="inner orange btn">
-
-        </div>
-        <div class="inner red btn"> 
-
-        </div>
-    </div>
     </div>
     <script src="app.js"></script>
-    
 </body>
 </html>
