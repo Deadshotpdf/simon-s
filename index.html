@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <style>
+        .outer{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner{
+            height: 10rem;
+            width: 10rem;
+            
+            display: inline-block; 
+            margin: 10px;
+            border-radius: 15px;
+            border: 5px black solid;
+        }
+        .pink{
+            background-color: pink;
+
+        }
+        .blue{
+            background-color: blue;
+
+        }
+        .orange{
+            background-color: orange;
+        }
+        .red{
+            background-color: red;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1 class="heading">Simon Game</h1>
+    <h2>Click to start</h2>
+    <div class="div">
+        <div class="inner pink btn">
+
+        </div>
+        <div class="inner blue btn">
+
+        </div>
+    </div>
+    <div class="div">
+        <div class="inner orange btn">
+
+        </div>
+        <div class="inner red btn"> 
+
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
