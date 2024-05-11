@@ -11,10 +11,10 @@ function blink(button){
     button.style.backgroundColor="white";
    let id= setInterval(()=>{
         button.style.backgroundColor=orignal;
-    },200);
+    },100);
     setTimeout(()=>{
         clearInterval(id);
-    },202);
+    },102);
    return;
 
 
